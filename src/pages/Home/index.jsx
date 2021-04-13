@@ -22,7 +22,7 @@ const Home = ({
       <Container>
         {users &&
           users.map((user) => (
-            <Link className="link" to={`/${user.login}/repositorios`}>
+            <Link key={user.id} className="link" to={`/${user.login}/repositorios`}>
               {user.name}
             </Link>
           ))}
